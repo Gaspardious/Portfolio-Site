@@ -1,90 +1,137 @@
 
-body {
-    font-family: 'Nunito Sans', sans-serif;
+
+:root {
+    --gray: rgba(115, 108, 99, 0.59);
+    --blue: rgba(74, 118, 194, 0.59);
+    --bg-color: #f9f9f9;
 }
 
-
-
-
-.hero {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--gray);
     margin: 0;
     padding: 0;
-    border: 0;
-    }
-
-.herotext {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: rgba(115, 108, 99, 0.59);
-    margin-top: 50px;
-    margin-left: 50px;
-    height: 700px;
-    order: 1;
-    }
-
-    .heroimage {
-        height: 700px;
-        order: 2;
-        margin: 0;
-        padding: 0;
-        border: 0;
-        }
-
-
-
+    position: relative;
+    text-align: center;
+}
 
 .navbar  {
-    background: linear-gradient(270deg, #F1F1F1 47.71%, rgba(241, 241, 241, 0.00) 87.95%);
-    color: rgba(115, 108, 99, 0.59);
+    background: #ffffff;
+    color: var(--gray);
     font-size: 18px;
     font-weight: 700;
     font-family: 'Fjalla One', sans-serif;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 50px;
-    position: sticky;
     top: 0;
     overflow: hidden;
+    position: fixed;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
 }
 
+#nav {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+}
 
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gray);
+    background-color: var(--bg-color);
+    height: 80vh;
+}
 
+#herotext {
+margin-right: 60px;
+}
 
+#hero-img {
+    width: 300px;
+    height: 300px;
+    border: 2px solid var(--blue);
+    border-radius: 50%
+}
+
+.namn {
+    font-size: 50px;
+    font-family: 'Fjalla One', sans-serif;
+    color: var(--blue);
+    }
+    
+    #tech {
+        margin-top: 60px;
+        font-family: "Fjalla One";
+        font-size: 15px;
+        display: flex;
+        gap: 1rem;
+    }
+
+    #techlist {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #techstack {
+        width: 65px;
+        height: 65px;
+    }
 
 .about-me {
     display: flex;
     flex-direction: column;
-    color: rgba(115, 108, 99, 0.59);
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 15px;
-    margin: 50px;
-    height: fit-content;
-    width: auto;
+    justify-content: center;
     align-items: center;
-  
+    height: fit-content;
+    margin-bottom: 50px;;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+
+}
+
+#contact {
+    background-color: white;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+footer {
+    background-color: F1F1F1;
+    color: rgba(115, 108, 99, 0.59);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: x-small;
+    min-height: 70px;
+    width: 100vw;
 }
 
 .text {
     width: 50%;
-  background-color: #fafafa;
+    background-color: #fafafa;
     padding: 25px;
     border-radius: 30px;
     border-bottom: solid #F1F1F1;
 }
-
-
-
-
-
-
-
-
 
 .form {
     display: flex;
@@ -101,26 +148,6 @@ a:hover {
     color: rgba(60, 60, 60, 0.59);
 }
 
-
-.container {
-height: fit-content;
-background-color: #ffffff;
-display: flex;
-flex-direction: column;
-align-items: center;
-
-}
-
-
-
-.namn {
-    font-size: 110px;
-    margin: 1px;
-    font-family: 'Fjalla One', sans-serif;
-    }
-    
-
-    
 .rubrik {
     font-size: 30px;
     padding: 1px;
@@ -133,12 +160,57 @@ align-items: center;
         font-family: 'Fjalla One', sans-serif;
     }    
 
-footer {
-    background-color: F1F1F1;
-    color: rgba(115, 108, 99, 0.59);
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    font-size: x-small;
-    min-height: 70px;
-}
+
+
+@media only screen and (max-width: 900px) {
+    body {
+      background-color: blue;
+    }
+
+    .namn {
+        font-size: 80px;
+        margin: 1px;
+        font-family: 'Fjalla One', sans-serif;
+        }
+
+        .rubrik {
+            font-size: 20px;
+            padding: 1px;
+            font-family: 'Fjalla One', sans-serif;
+        } 
+        
+            .underrubrik {
+                font-size: 20px;
+                padding: 1px;
+                font-family: 'Fjalla One', sans-serif;
+            }  
+
+     
+
+    }
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: yellow;
+    }
+      .hero {
+        padding: 0;
+        border: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        }
+    
+    .herotext {
+        position: absolute;
+        margin: 10 0 10 0;;
+        }
+    
+  }
