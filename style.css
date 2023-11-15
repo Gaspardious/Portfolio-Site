@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-    text-align: center;
+ 
 }
 
 .navbar  {
@@ -89,7 +89,9 @@ margin-right: 60px;
     justify-content: center;
     align-items: center;
     height: fit-content;
-    margin-bottom: 50px;;
+    margin-bottom: 50px;
+    text-align: center;
+
 }
 
 .portfolio {
@@ -98,6 +100,16 @@ margin-right: 60px;
     justify-content: center;
     align-items: center;
     background-color: var(--bg-color);
+    padding: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+}
+
+.projects {
+    background: #fff;
+    width: 70vw;
+    height: 20vw;
+    margin: 30px;
+    padding: 20px;
 
 }
 
@@ -121,8 +133,10 @@ footer {
     display: flex;
     justify-content: center;
     font-size: x-small;
-    min-height: 70px;
     width: 100vw;
+
+
+
 }
 
 .text {
@@ -164,29 +178,9 @@ a:hover {
 
 @media only screen and (max-width: 900px) {
     body {
-      background-color: blue;
-    }
-
-    .namn {
-        font-size: 80px;
-        margin: 1px;
-        font-family: 'Fjalla One', sans-serif;
-        }
-
-        .rubrik {
-            font-size: 20px;
-            padding: 1px;
-            font-family: 'Fjalla One', sans-serif;
-        } 
-        
-            .underrubrik {
-                font-size: 20px;
-                padding: 1px;
-                font-family: 'Fjalla One', sans-serif;
-            }  
-
      
-
+    }
+     
     }
 
 
@@ -197,20 +191,41 @@ a:hover {
 
 @media only screen and (max-width: 600px) {
     body {
-      background-color: yellow;
+
     }
+
+    header {
+    }
+
       .hero {
-        padding: 0;
+        padding: 20px;
         border: 0;
-        margin: 0;
         display: flex;
-        justify-content: space-around;
-        position: relative;
+        flex-direction: column-reverse;
+        text-align: center;
         }
     
-    .herotext {
-        position: absolute;
-        margin: 10 0 10 0;;
+    #herotext {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 90vw;
+        margin: 0;
         }
     
+        .namn {
+            font-size: 40px;
+            font-family: 'Fjalla One', sans-serif;
+            color: var(--blue);
+            }
+
+        #hero-img {
+            width: 250px;
+            height: 250px;
+            border: 2px solid var(--blue);
+            border-radius: 50%
+
   }
+}
+  
