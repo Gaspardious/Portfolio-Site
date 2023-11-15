@@ -174,13 +174,18 @@ a:hover {
         font-family: 'Fjalla One', sans-serif;
     }    
 
-
-
-@media only screen and (max-width: 900px) {
-    body {
-     
+    #menu {
+       margin: 20px;
     }
-     
+
+
+
+@media only screen and (min-width: 600px) {
+ 
+    #menu {
+        display: none;
+    }
+
     }
 
 
@@ -190,13 +195,7 @@ a:hover {
 
 
 @media only screen and (max-width: 600px) {
-    body {
-
-    }
-
-    header {
-    }
-
+  
       .hero {
         padding: 20px;
         border: 0;
@@ -225,7 +224,18 @@ a:hover {
             height: 250px;
             border: 2px solid var(--blue);
             border-radius: 50%
+          }
 
-  }
+          #nav {
+            display:none;
+        }
+
+          #logo {
+            margin-right: auto;
+            margin-left: 30px;
+        }
+
+
+
 }
   
