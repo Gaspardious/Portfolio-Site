@@ -28,7 +28,7 @@ body {
     background: #ffffff;
     color: var(--gray);
     font-size: 18px;
-    font-weight: 700;
+    font-weight: 400;
     font-family: 'Fjalla One', sans-serif;
     display: flex;
     justify-content: space-around;
@@ -66,6 +66,16 @@ margin: 0px 20px;
     border: 2px solid var(--blue);
     border-radius: 50%; 
     margin: 0px 20px 20px 20px;  
+    animation: morph 8s ease-in-out infinite
+    animation-name: morph;
+animation-duration: 8s;
+animation-timing-function: ease-in-out;
+animation-delay: 0s;
+animation-iteration-count: infinite;
+animation-direction: normal;
+animation-fill-mode: none;
+animation-play-state: running;
+animation-timeline: ;
 }   
 
 .namn {
