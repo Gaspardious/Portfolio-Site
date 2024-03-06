@@ -209,7 +209,7 @@ a:hover {
 
 @media only screen and (min-width: 800px) {
 
-    #menu {
+    #menu, #mySidenav {
         display: none;
     }
     
@@ -291,8 +291,8 @@ a:hover {
         right: 25px;
         font-size: 36px;
         margin-left: 50px;
-      }
-     */
+      } */
+    
 
 }
   

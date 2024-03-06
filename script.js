@@ -30,6 +30,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+//OFF-CANVAS MENU
+
 let menuBtn = document.getElementById("menu-btn")
 
 menuBtn.addEventListener("click", () => {
@@ -40,5 +43,5 @@ menuBtn.addEventListener("click", () => {
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-/*   document.getElementById("main").style.marginLeft= "0"; */
+  document.getElementById("main").style.marginLeft= "0";
 }
