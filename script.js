@@ -29,3 +29,16 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+
+let menuBtn = document.getElementById("menu-btn")
+
+menuBtn.addEventListener("click", () => {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.querySelector("body").style.marginLeft = "250px";
+  });
+
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+/*   document.getElementById("main").style.marginLeft= "0"; */
+}

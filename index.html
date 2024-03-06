@@ -1,106 +1,115 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css" >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;1,6..12,300&display=swap" rel="stylesheet">
-    <title>Dejan Gaspar</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;1,6..12,300&display=swap" rel="stylesheet">
+        <title>Dejan Gaspar</title>
+    </head>
 
 <!-- NavBar -->
 
-<header id="home">
-    <nav class="navbar">
-        <div id="logo" onclick="scrollToSection('home')">
-            <h1>🧔🏻‍♂️ GASPAR.</h1>    
+    <header id="home">
+        <nav class="navbar">
+            <div id="logo" onclick="scrollToSection('home')">
+                <h1>🧔🏻‍♂️ GASPAR.</h1>    
+            </div>
+
+    <div id="mySidenav" class="sidenav">
+        <ul id="nav">
+            <li><a href="#home" class="menu-link" onclick="scrollToSection('home')" id="home-item">HOME</a></li>
+            <li><a href="#about" class="menu-link" onclick="scrollToSection('about')" class="item">ABOUT ME</a></li>
+            <li><a href="#portfolio" class="menu-link" onclick="scrollToSection('portfolio')" class="item">PORTFOLIO</a></li>
+            <li><a href="#contact" class="menu-link" onclick="scrollToSection('contact')" class="item">CONTACT</a></li>
+            <li><a href="/shop.html" class="item">SHOP</a></li>
+        </ul>
+    <div>
+
+        <div id="menu">
+            <img src="menu.svg" alt="hamburger menu" id="menu-btn">
         </div>
- 
-     <ul id="nav">
-        <li><a href="#home" class="menu-link" onclick="scrollToSection('home')" id="home-item">HOME</a></li>
-        <li><a href="#about" class="menu-link" onclick="scrollToSection('about')" class="item">ABOUT ME</a></li>
-        <li><a href="#portfolio" class="menu-link" onclick="scrollToSection('portfolio')" class="item">PORTFOLIO</a></li>
-        <li><a href="#contact" class="menu-link" onclick="scrollToSection('contact')" class="item">CONTACT</a></li>
-        <li><a href="/shop.html" class="item">SHOP</a></li>
-    </ul>
-    <div id="menu">
-        <img src="menu.svg" alt="hamburger menu">
-    </div>
-    </nav>
-</header>
+        </nav>
+    </header>
    
 
 <!-- HeroImage -->
 
-<body>
+    <body>
 
-<div class="hero">
-    
-    <div id="herotext">
-            <h1 class="namn">FRONTEND DEVELOPER</h1>
-            <p>Hi, I'm Dejan Gaspar. A passionate Front-End Developer based in Gothenburg, Sweden. 📍 </p>
+    <div class="hero">
         
-        <div id="tech">  
-                <h2>TECH STACK</h2>
-                <h2>  | </h2>
-            <ul id="techlist">
-                <li> <img src="https://skillicons.dev/icons?i=html,css" id="techstack" alt=""></li>
-            </ul>
+        <div id="herotext">
+                <h1 class="namn">FRONTEND DEVELOPER</h1>
+                <p>Hi, I'm Dejan Gaspar. A passionate Front-End Developer based in Gothenburg, Sweden. 📍 </p>
+            
+            <div id="tech">  
+                    <h2>TECH STACK</h2>
+                    <h2>  | </h2>
+                <ul id="techlist">
+                    <li> <img src="https://skillicons.dev/icons?i=html,css" id="techstack" alt=""></li>
+                </ul>
+            </div>
         </div>
+
+            <div id="heroimage">
+                <img src="images/dejan.png" alt="" id="hero-img">
+            </div>
+
     </div>
 
-        <div id="heroimage">
-            <img src="images/dejan.png" alt="" id="hero-img">
+    <!-- Main -->
+
+    <section id="about">
+    <h1 class="rubrik">ABOUT ME</h1>
+        <article class="text">
+            <p id="firstletter">Hello friend! My name is Dejan. Originally from Bosnia, I now call Gothenburg, Sweden, my home.</p>
+            <p> Life's a blend of simplicity and complexity for me. Whether I'm trekking through nature, decoding the stock market, hitting the gym, or diving into the world of Xbox gaming and coding, I find joy in the mix.</p>
+            <p>Join me on this journey as I share experiences from the scenic landscapes of Sweden, the ever-evolving world of stocks, and the creative realm of coding. It's more than just a story—it's life unfolding.</p> 
+        </article>
+    </section>
+
+
+    <section id="portfolio">
+    <h1 class="rubrik">PORTFOLIO</h1>
+    <div id="projects-container">
+        <div id="project1">
+            <section class="projects">PROJECT 1</section>
+            <section class="projects">PROJECT 1</section>
         </div>
 
-</div>
 
-<!-- Main -->
-
- <section id="about">
-  <h1 class="rubrik">ABOUT ME</h1>
-    <article class="text">
-        <p id="firstletter">Hello friend! My name is Dejan. Originally from Bosnia, I now call Gothenburg, Sweden, my home.</p>
-        <p> Life's a blend of simplicity and complexity for me. Whether I'm trekking through nature, decoding the stock market, hitting the gym, or diving into the world of Xbox gaming and coding, I find joy in the mix.</p>
-        <p>Join me on this journey as I share experiences from the scenic landscapes of Sweden, the ever-evolving world of stocks, and the creative realm of coding. It's more than just a story—it's life unfolding.</p> 
-    </article>
- </section>
-
-
- <section id="portfolio">
-  <h1 class="rubrik">PORTFOLIO</h1>
-<div id="projects-container">
-    <div id="project1">
-        <section class="projects">PROJECT 1</section>
+        
+        <div id="project2">
+            <section class="projects">PROJECT 2</section>
+        </div>
+        <div id="project3">
+            <section class="projects">PROJECT 3</section>
+        </div>
+        <div id="project4">
+            <section class="projects">PROJECT 4</section>
+        </div>
+    </section>
     </div>
-    <div id="project2">
-        <section class="projects">PROJECT 2</section>
-    </div>
-    <div id="project3">
-        <section class="projects">PROJECT 3</section>
-    </div>
-    <div id="project4">
-        <section class="projects">PROJECT 4</section>
-    </div>
-</section>
-</div>
 
 
 
- <section id="contact">
-  <h1 class="rubrik">CONTACT</h1>
-<p>Let's talk! </p>
- </section>
+    <section id="contact">
+    <h1 class="rubrik">CONTACT</h1>
+        <p>Let's talk! </p>
+        <a href="mailto:dejan.gaspar88@gmail.com">📩 Contact me via mail!</a>
+    </section>
 
 
-<footer class="footer">
+    <footer class="footer">
 
-    <p>Copyright - Dejan Gaspar 2024</p>
+        <p>Copyright - Dejan Gaspar 2024</p>
 
-</footer>
+    </footer>
 
-</body>
-<script src="script.js" type="module"></script>
+    </body>
+    <script src="script.js"></script>
 </html>
 

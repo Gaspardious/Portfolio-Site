@@ -28,7 +28,6 @@ body {
     background: #ffffff;
     color: var(--gray);
     font-size: 18px;
-    font-weight: 400;
     font-family: 'Fjalla One', sans-serif;
     display: flex;
     justify-content: space-around;
@@ -66,16 +65,7 @@ margin: 0px 20px;
     border: 2px solid var(--blue);
     border-radius: 50%; 
     margin: 0px 20px 20px 20px;  
-    animation: morph 8s ease-in-out infinite
-    animation-name: morph;
-animation-duration: 8s;
-animation-timing-function: ease-in-out;
-animation-delay: 0s;
-animation-iteration-count: infinite;
-animation-direction: normal;
-animation-fill-mode: none;
-animation-play-state: running;
-animation-timeline: ;
+    
 }   
 
 .namn {
@@ -190,6 +180,7 @@ a:hover {
 .rubrik {
     font-size: 30px;
     padding: 1px;
+    font-weight: 100;
     font-family: 'Fjalla One', sans-serif;
 } 
 
@@ -205,13 +196,24 @@ a:hover {
 
 
 
+
+
+
+
+
+
+
+
+    
+
+
 @media only screen and (min-width: 800px) {
- 
+
     #menu {
         display: none;
     }
-
-    }
+    
+}
 
 
 @media only screen and (max-width: 800px) {
@@ -256,6 +258,41 @@ a:hover {
         }
 
 
+/* off canvas menu */
+/*     .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+      }
+      
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      .sidenav {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+     */
 
 }
   
