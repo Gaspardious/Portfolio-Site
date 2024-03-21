@@ -235,6 +235,12 @@ a:hover {
         height: 100%;
         border: none; /* Removes the border around the iframe */
     }
+
+    article {
+        border-radius: 15px;
+        padding: 1px 8px;
+        background: var(--bg-color)
+    }
     
 
 
