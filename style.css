@@ -83,6 +83,36 @@ margin: 0px 20px;
     transform: rotate(20deg) scale(1.2);
 }
 
+.img__shop {
+    max-height: 18vw; /* Set a maximum height for the image container */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    overflow-x: hidden; /* Hide horizontal scroll, optional */
+    margin: 40px 0px;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+}
+
+.img__ {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.btn_ {
+    background-color: lightgray;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 50px;
+    font-size: 18px;
+}
+
+
+
+
+
 .namn {
     font-size: 50px;
     font-family: 'Fjalla One', sans-serif;
@@ -135,10 +165,9 @@ margin: 0px 20px;
 .projects {
     background: #fff;
     width: 70vw;
-    height: 20vw;
+    min-height: 20vw;
     margin: 30px;
     padding: 20px;
-
 }
 
 #contact-section {
