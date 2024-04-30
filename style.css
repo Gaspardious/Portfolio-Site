@@ -84,19 +84,21 @@ margin: 0px 20px;
 }
 
 .img__shop {
-    max-height: 18vw; /* Set a maximum height for the image container */
-    overflow-y: auto;  /* Enable vertical scrolling */
-    overflow-x: hidden; /* Hide horizontal scroll, optional */
-    margin: 40px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px 40px;
     border: 1px solid lightgrey;
     border-radius: 20px;
     min-height: 150px;
+    padding: 20px;
 }
 
 .img__ {
-    width: 100%;
-    display: block;
-    padding: 8px;
+    width: 98%;
+    height: 98%;
+    border: 2px solid var(--gray);
+    border-radius: 15px;
+
 }
 
 .btn_ {
@@ -109,10 +111,6 @@ margin: 0px 20px;
     width: 50px;
     font-size: 18px;
 }
-
-
-
-
 
 .namn {
     font-size: 50px;
@@ -165,16 +163,14 @@ margin: 0px 20px;
 
 .projects {
     background: #fff;
-    width: 70vw;
-    min-height: 20vw;
-    margin: 30px;
-    padding: 20px;
+    min-height: 30vw;
+    width: 100%;
+    padding: 10px 5px;
 }
 
 #contact-section {
-        background-color: var(--bg-color);
-        padding: 30px 30px;
-
+    background-color: var(--bg-color);
+    padding: 30px 30px;
 }
 
 
@@ -342,6 +338,14 @@ a:hover {
             justify-content: center;
             align-items: center;
         }
+
+        .img__shop {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem; 
+            
+        }
+        
 
 
 /* off canvas menu */
