@@ -1,6 +1,8 @@
 :root {
-    --gray: rgba(115, 108, 99, 0.59);
-    --blue: rgba(74, 118, 194, 0.59);
+    --gray: rgb(0, 0, 0);
+    --blue: rgb(74, 118, 194);
+/*     --gray: rgba(115, 108, 99, 0.59);
+    --blue: rgba(74, 118, 194, 0.59); */
     --bg-color: #f4f4f4;
 }
 
@@ -43,7 +45,7 @@ body {
     list-style-type: none;
 }
 
-.hero {
+#home {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,7 +85,7 @@ body {
 .img__ {
     width: 98%;
     height: 98%;
-    border: 2px solid var(--gray);
+    border: 1px solid var(--gray);
     border-radius: 15px;
 }
 
@@ -212,6 +214,9 @@ a:-webkit-any-link {
 a:hover {
     color: var(--blue);
 }
+nav ul li a.active {
+    color: var(--blue);
+}
 
 .rubrik {
     font-size: 30px;
@@ -268,7 +273,7 @@ svg:hover path {
 }
 
 @media only screen and (max-width: 800px) {
-    .hero {
+    #home {
         display: flex;
         flex-direction: column-reverse;
         text-align: center;
@@ -325,7 +330,7 @@ svg:hover path {
     }
 
     .img__ {
-        border: 2px solid var(--gray);
+        border: 1px solid var(--gray);
         border-radius: 15px;
     }
 
