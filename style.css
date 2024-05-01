@@ -1,8 +1,6 @@
 :root {
     --gray: rgb(0, 0, 0);
     --blue: rgb(74, 118, 194);
-/*     --gray: rgba(115, 108, 99, 0.59);
-    --blue: rgba(74, 118, 194, 0.59); */
     --bg-color: #f4f4f4;
 }
 
@@ -66,7 +64,7 @@ body {
 #hero-img {
     width: 350px;
     height: 350px;
-    border: 2px solid var(--blue);
+    border: 3px solid var(--blue);
     border-radius: 50%; 
     margin: 0px 20px 20px 20px;  
     box-shadow: 12px 12px 15px 10px rgba(0, 0, 0, 0.2);    
@@ -95,10 +93,20 @@ body {
     padding: 10px;
     border: none;
     border-radius: 10px;
-    margin: 0 auto;
-    width: 120px;
-    font-size: 18px;
+    width: 110px;
+    font-size: 16px;
+    font-weight: 500;
     border: solid 1px lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btns {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .namn {
@@ -214,9 +222,7 @@ a:-webkit-any-link {
 a:hover {
     color: var(--blue);
 }
-nav ul li a.active {
-    color: var(--blue);
-}
+
 
 .rubrik {
     font-size: 30px;
