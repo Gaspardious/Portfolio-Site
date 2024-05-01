@@ -52,13 +52,19 @@ body {
     height: 80vh;
 }
 
+#github {
+    height: 40px;
+    width: 40px;
+    background-color: whitesmoke;
+}
+
 #herotext {
     margin: 0px 20px;
 }
 
 #hero-img {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     border: 2px solid var(--blue);
     border-radius: 50%; 
     margin: 0px 20px 20px 20px;  
@@ -273,6 +279,7 @@ svg:hover path {
         display: flex;
         flex-direction: column-reverse;
         text-align: center;
+        height: 100vh;  
     }
     
     #herotext {
@@ -295,7 +302,7 @@ svg:hover path {
         height: 320px;
         border: 2px solid var(--blue);
         border-radius: 50%;
-        margin-top: 150px;
+        margin: 0px 20px 40px 20px;
     }
 
     #nav {
