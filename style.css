@@ -4,6 +4,10 @@
     --bg-color: #f4f4f4;
 }
 
+.menu_link {
+    color: var(--gray);
+}
+
 body {
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
@@ -215,7 +219,7 @@ a {
 a:-webkit-any-link {
     cursor: pointer;
     text-decoration: none;
-    color: rgba(115, 108, 99, 0.59);
+    color: var(--gray)
 }
 
 a:hover {
@@ -311,7 +315,7 @@ svg:hover path {
     #nav {
         font-size: 14px;
         gap: 0.6rem;
-        margin-right: 7px;
+        margin-right: 8px;
     }
 
     #logo {
