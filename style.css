@@ -64,6 +64,7 @@ body {
     margin: 0px 20px;
 }
 
+
 #hero-img {
     width: 350px;
     height: 350px;
@@ -112,7 +113,7 @@ body {
     gap: 1rem;
 }
 
-.namn {
+#namn {
     font-size: 50px;
     font-family: 'Fjalla One', sans-serif;
     color: var(--blue);
@@ -171,7 +172,7 @@ body {
 }
 #project_desc {
     padding: 5px 40px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 #contact-section {
