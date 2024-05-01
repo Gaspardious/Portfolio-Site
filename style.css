@@ -301,11 +301,13 @@ svg:hover path {
     #nav {
         font-size: 15px;
         gap: 0.9rem;
+        margin-right: 7px;
     }
 
     #logo {
         margin-right: auto;
         margin-left: 10px;
+        font-size: 16px;
     }
 
     #tech {
