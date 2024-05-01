@@ -295,7 +295,7 @@ svg:hover path {
         height: 320px;
         border: 2px solid var(--blue);
         border-radius: 50%;
-        margin-top: 50px;
+        margin-top: 150px;
     }
 
     #nav {
