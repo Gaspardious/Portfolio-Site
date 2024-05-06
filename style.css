@@ -302,7 +302,7 @@ svg:hover path {
         display: flex;
         flex-direction: column-reverse;
         text-align: center;
-        height: 90vh;
+        height: 100vh;
     }
 
     #herotext {
