@@ -23,9 +23,21 @@
                 <li><a href="#about" class="menu-link" onclick="scrollToSection('about')">ABOUT</a></li>
                 <li><a href="#contact" class="menu-link" onclick="scrollToSection('contact')">CONTACT</a></li>
             </ul>
+        <img src="/images/more.png" alt="" id="mobile_menu" onclick="openNav()">
         </nav>
     </header>
    
+    <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <li><a href="#home" class="menu-link" onclick="scrollToSection('home')">HOME</a></li>
+    <li><a href="#portfolio" class="menu-link" onclick="scrollToSection('portfolio')">PORTFOLIO</a></li>
+    <li><a href="#about" class="menu-link" onclick="scrollToSection('about')">ABOUT</a></li>
+    <li><a href="#contact" class="menu-link" onclick="scrollToSection('contact')">CONTACT</a></li>
+  </div>
+  <div id="backgroundOverlay" class="background-overlay"></div> 
+
+</div>
 
 <!-- HeroImage -->
 

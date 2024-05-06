@@ -25,6 +25,7 @@ body {
     transform: scale(1.15);
 }
 
+
 .navbar {
     background: #ffffff;
     color: var(--gray);
@@ -35,9 +36,8 @@ body {
     align-items: center;
     width: 100%;
     height: 50px;
-    top: 0;
-    position: fixed;
     box-shadow: 0 0 10px rgba(0,0,0,.09);
+    position: fixed;
 }
 
 #nav {
@@ -294,13 +294,18 @@ svg:hover path {
     fill: var(--blue);
 }
 
+#mobile_menu {
+    display: none;
+}
+
+
 @media only screen and (max-width: 800px) {
     #home {
         display: flex;
         flex-direction: column-reverse;
         text-align: center;
         height: 100vh;  
-        margin-top: 50px;
+
     }
 
     #herotext {
@@ -326,12 +331,17 @@ svg:hover path {
         margin: 10px 20px 40px 20px;
     }
 
-    #nav {
-        font-size: 14px;
-        gap: 0.6rem;
-        margin-right: 8px;
+    #mobile_menu {
+        display: flex;
+        width: 30px;
+        padding: 0px 10px;
+        cursor: pointer;
     }
 
+
+    #nav {
+        display: none;
+    }
     #logo {
         margin-right: auto;
         margin-left: 7px;
@@ -364,5 +374,76 @@ svg:hover path {
     #namn {
         font-size: 40px;
     }
+    
 }
 
+
+
+
+
+/* MOBILE NAVIGATION */
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.2s;
+  }
+  
+  .background-overlay {
+    display: block; /* Changed from none to block */
+    position: fixed;
+    top: 0;
+    left: 60%;  /* Starts from the middle to cover the remaining 50% */
+    height: 100%;
+    width: 60%; /* Covers the rest of the screen */
+    background-color: rgba(0,0,0, 0.4); /* Darkened background */
+    z-index: 1;  /* Ensure it's below the main overlay */
+    opacity: 0;  /* Start fully transparent */
+    transition: opacity 0.2s ease; /* Smooth transition for opacity */
+}
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.2s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
