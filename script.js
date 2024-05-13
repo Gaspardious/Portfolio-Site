@@ -33,11 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-
-
-
-
 function openNav() {
     document.getElementById("myNav").style.width = "60%";
     document.getElementById("backgroundOverlay").style.display = "block";
