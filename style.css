@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&display=swap');
+
+
 :root {
-    --gray: rgb(0, 0, 0);
+    --gray: rgb(80, 80, 80);
     --blue: rgb(74, 118, 194);
     --bg-color: #f4f4f4;
 }
@@ -8,6 +11,8 @@
     color: var(--gray);
 }
 
+
+
 body {
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
@@ -15,14 +20,40 @@ body {
     box-sizing: border-box;
 }
 
+#name {
+    font-size: 15px;
+    font-family: 'nunito sans', sans-serif;
+    color: var(--blue);
+    margin: 0px 0px;
+    font-weight: 100;
+    letter-spacing: 5px;
+}
+#lastname {
+    font-size: 18px;
+    font-family: 'nunito sans', sans-serif;
+    color: var(--blue);
+    margin: 0px 0px;
+    font-weight: 800;
+}
+
+
 #logo {
     cursor: pointer;
     transition: transform 1s ease;
+    padding: 10px 10px;
 }
 
 #logo:hover {
     color: var(--blue) !important;
-    transform: scale(1.15);
+    transform: scale(1.05);
+}
+
+#job_title {
+    font-size: 50px;
+    font-family: 'Fjalla One', sans-serif;
+    color: var(--blue);
+    margin: 0px 0px;
+    font-weight: 100;
 }
 
 .navbar {
@@ -123,12 +154,7 @@ body {
     gap: 1rem;
 }
 
-#namn {
-    font-size: 50px;
-    font-family: 'Fjalla One', sans-serif;
-    color: var(--blue);
-    margin: 0px 0px;
-}
+
     
 #tech {
     margin-top: 40px;
@@ -314,10 +340,15 @@ svg:hover path {
         margin: 0;
     }
     
-    .namn {
-        font-size: 40px;
+    #job_title {
+        font-size: 45px;
         font-family: 'Fjalla One', sans-serif;
         color: var(--blue);
+    }
+
+    span {
+        color: var(--blue);
+        font-weight: 100;
     }
 
     #hero-img {
@@ -369,9 +400,7 @@ svg:hover path {
         width: 90vw;
     }
 
-    #namn {
-        font-size: 40px;
-    }
+
     
     
 }
@@ -422,7 +451,7 @@ svg:hover path {
     text-decoration: none;
     font-family: 'Fjalla One', sans-serif;
     font-size: 36px;
-    color: #818181;
+    color: var(--blue);
     display: block;
     transition: 0.2s;
   }
