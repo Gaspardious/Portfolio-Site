@@ -1,17 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&display=swap');
 
-
 :root {
     --gray: rgb(80, 80, 80);
-    --blue: rgb(74, 118, 194);
+    --blue: rgb(255, 115, 0);
+/*     --blue: rgb(74, 118, 194); */
     --bg-color: #f4f4f4;
 }
-
-.menu_link {
-    color: var(--gray);
-}
-
-
 
 body {
     font-family: 'Nunito Sans', sans-serif;
@@ -19,6 +13,26 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+.rubrik {
+    font-size: 40px;
+    padding: 1px;
+    font-weight: 100;
+    font-family: 'Fjalla One', sans-serif;
+    color: var(--blue);
+    text-shadow: 1px 1px 2px rgb(148, 148, 148);
+}
+.underrubrik {
+    font-size: 25px;
+    padding: 1px;
+    font-weight: 100;
+    font-family: 'Fjalla One', sans-serif;
+    color: var(--blue);
+    margin: 0 auto;
+}
+
+
+/*********** HEADER - SECTION ***********/
 
 #name {
     font-size: 15px;
@@ -49,11 +63,12 @@ body {
 }
 
 #job_title {
-    font-size: 50px;
+    font-size: 70px;
     font-family: 'Fjalla One', sans-serif;
     color: var(--blue);
     margin: 0px 0px;
     font-weight: 100;
+    text-shadow: 1px 1px 2px rgb(148, 148, 148);
 }
 
 .navbar {
@@ -75,6 +90,13 @@ body {
     gap: 2rem;
     list-style-type: none;
 }
+
+.menu_link {
+    color: var(--gray);
+}
+
+
+/*********** HERO - SECTION ***********/
 
 #home {
     display: flex;
@@ -114,22 +136,152 @@ body {
     }
 }
 
+.img__ {
+    width: 98%;
+    height: 98%;
+    border: 1px solid white;
+    border-radius: 15px;
+}
 
-.img__shop {
+#tech {
+    margin-top: 40px;
+    font-family: "Fjalla One";
+    font-size: 15px;
+    display: flex;
+    gap: 1rem;
+}
+
+#techlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#techstack {
+    width: 165px;
+    height: 65px;
+}
+
+
+/*********** ABOUT - SECTION ***********/
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 50px;
+
+}
+
+.about__text {
+    max-width: 500px;
+    background-color: #fafafa;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 30px;
+    border-bottom: solid #F1F1F1;
+    font-size: 15px;
+}
+
+#about__firstletter::first-letter {
+    font-size: xx-large;
+}
+
+
+
+/*********** PORTFOLIO - SECTION ***********/
+
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 50px 50px 0px 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,.09);
+}
+
+.projects {
+    background: #fff;
+    min-height: 30vw;
+    width: 100%;
+    padding: 25px 5px;
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    position: relative;
+}
+
+
+.project__info__container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 0.25rem;
+}
+
+.project__info, 
+.__html_css, 
+.__javascript,
+.__react,
+.__api,
+.__school_project {
+    width: 120px;
+    height: 20px;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    top: 10px;
+    left: 10px;
+    margin: 0 auto;
+
+    .project__info__text {
+        color: white;
+        font-size: 8px;
+    }
+}
+
+.__html_css {
+    width: 60px;
+}
+
+.__javascript {
+    width: 70px;
+}
+.__react, .__api {
+    width: 50px;
+}
+.__api {
+    width: 30px;
+}
+.__school_project {
+    width: 100px;
+}
+
+
+.project__article  {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 40px 40px;
-    border: 1px solid lightgrey;
+    border: none;
     border-radius: 20px;
     min-height: 150px;
     padding: 20px;
 }
 
-.img__ {
-    width: 98%;
-    height: 98%;
-    border: 1px solid var(--gray);
-    border-radius: 15px;
+#project_desc {
+    padding: 20px 20px;
+    font-size: 16px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 15px;
+    text-align: center;
 }
 
 .btn_ {
@@ -155,61 +307,7 @@ body {
 }
 
 
-    
-#tech {
-    margin-top: 40px;
-    font-family: "Fjalla One";
-    font-size: 15px;
-    display: flex;
-    gap: 1rem;
-}
-
-#techlist {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-#techstack {
-    width: 165px;
-    height: 65px;
-}
-
-#about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-    margin-bottom: 50px;
-    text-align: center;
-    padding: 50px;
-}
-
-#portfolio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--bg-color);
-    padding: 50px 50px 0px 50px;
-    box-shadow: 0 0 10px rgba(0,0,0,.09);
-}
-
-.projects {
-    background: #fff;
-    min-height: 30vw;
-    width: 100%;
-    padding: 25px 5px;
-    margin: 50px 0px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 15px;
-}
-#project_desc {
-    padding: 5px 40px;
-    font-size: 16px;
-}
+/*********** CONTACT - SECTION ***********/
 
 #contact-section {
     background-color: var(--bg-color);
@@ -230,24 +328,6 @@ body {
     padding: 3px;
 }
 
-.text {
-    min-width: 300px;
-    background-color: #fafafa;
-    padding: 25px;
-    margin: 25px;
-    border-radius: 30px;
-    border-bottom: solid #F1F1F1;
-}
-
-#firstletter::first-letter {
-    font-size: xx-large;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-}
-
 a {
     text-decoration: none;
     color: var(--gray);
@@ -261,24 +341,6 @@ a:-webkit-any-link {
 
 a:hover {
     color: var(--blue);
-}
-
-
-.rubrik {
-    font-size: 30px;
-    padding: 1px;
-    font-weight: 100;
-    font-family: 'Fjalla One', sans-serif;
-}
-
-.underrubrik {
-    font-size: 30px;
-    padding: 1px;
-    font-family: 'Fjalla One', sans-serif;
-}
-
-#menu {
-    margin: 20px;
 }
 
 #website-preview {
@@ -299,6 +361,11 @@ article {
     background: var(--bg-color);
 }
     
+
+
+
+/*********** FOOTER - SECTION ***********/
+
 footer {
     display: flex;
     flex-direction: column;
@@ -322,6 +389,75 @@ svg:hover path {
     display: none;
 }
 
+/********** MOBILE NAVIGATION **********/
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.2s;
+  }
+  
+  .background-overlay {
+    display: block; 
+    position: fixed;
+    top: 0;
+    left: 60%;  
+    height: 100%;
+    width: 60%; 
+    background-color: rgba(0,0,0, 0.4); 
+    z-index: 1;  
+    opacity: 0;  
+    transition: opacity 0.2s ease; 
+}
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 36px;
+    color: var(--blue);
+    display: block;
+    transition: 0.2s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
 
 @media only screen and (max-width: 800px) {
     #home {
@@ -344,11 +480,6 @@ svg:hover path {
         font-size: 45px;
         font-family: 'Fjalla One', sans-serif;
         color: var(--blue);
-    }
-
-    span {
-        color: var(--blue);
-        font-weight: 100;
     }
 
     #hero-img {
@@ -383,7 +514,7 @@ svg:hover path {
         align-items: center;
     }
 
-    .img__shop {
+    .project__article {
         display: grid;
         grid-template-columns: 1fr;
         gap: 1rem; 
@@ -391,87 +522,21 @@ svg:hover path {
         padding: 10px;
     }
 
+    #project_desc {
+        width: fit-content;
+     
+    }
+
     .img__ {
-        border: 1px solid var(--gray);
         border-radius: 15px;
     }
 
     .projects {
         width: 90vw;
     }
-
-
-    
-    
 }
 
 
 
 
 
-/* MOBILE NAVIGATION */
-
-
-.overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-x: hidden;
-    transition: 0.2s;
-  }
-  
-  .background-overlay {
-    display: block; /* Changed from none to block */
-    position: fixed;
-    top: 0;
-    left: 60%;  /* Starts from the middle to cover the remaining 50% */
-    height: 100%;
-    width: 60%; /* Covers the rest of the screen */
-    background-color: rgba(0,0,0, 0.4); /* Darkened background */
-    z-index: 1;  /* Ensure it's below the main overlay */
-    opacity: 0;  /* Start fully transparent */
-    transition: opacity 0.2s ease; /* Smooth transition for opacity */
-}
-
-  .overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 36px;
-    color: var(--blue);
-    display: block;
-    transition: 0.2s;
-  }
-  
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
-    .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    }
-  }

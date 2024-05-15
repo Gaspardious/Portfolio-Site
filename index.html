@@ -9,20 +9,20 @@
 
 <!-- NavBar -->
 <body>
-    <header>
-        <nav class="navbar">
+    <header class="navbar">
             <div id="logo" onclick="scrollToSection('home')">
                 <h1 id="name">DEJAN</h1>    
                 <h1 id="lastname">GAŠPAR.</h1>    
             </div>
-            <ul id="nav">
-                <li><a href="#home" class="menu-link" onclick="scrollToSection('home')">HOME</a></li>
-                <li><a href="#portfolio" class="menu-link" onclick="scrollToSection('portfolio')">PORTFOLIO</a></li>
-                <li><a href="#about" class="menu-link" onclick="scrollToSection('about')">ABOUT</a></li>
-                <li><a href="#contact" class="menu-link" onclick="scrollToSection('contact')">CONTACT</a></li>
-            </ul>
+            <nav>
+                <ul id="nav">
+                    <li><a href="#home" class="menu-link" onclick="scrollToSection('home')">HOME</a></li>
+                    <li><a href="#portfolio" class="menu-link" onclick="scrollToSection('portfolio')">PORTFOLIO</a></li>
+                    <li><a href="#about" class="menu-link" onclick="scrollToSection('about')">ABOUT</a></li>
+                    <li><a href="#contact" class="menu-link" onclick="scrollToSection('contact')">CONTACT</a></li>
+                </ul>
+            </nav>
         <img src="/images/more.png" alt="" id="mobile_menu" onclick="openNav()">
-        </nav>
     </header>
    
         <div id="myNav" class="overlay">
@@ -62,8 +62,8 @@
 
     <section id="about">
         <h2 class="rubrik">ABOUT</h2>
-            <article class="text">
-                <p id="firstletter">Hello friend! My name is Dejan. Originally from Bosnia, I now call Gothenburg, Sweden, my home.</p>
+            <article class="about__text">
+                <p id="about__firstletter">Hello friend! My name is Dejan. Originally from Bosnia, I now call Gothenburg, Sweden, my home.</p>
                 <p> Life's a blend of simplicity and complexity for me. Whether I'm trekking through nature, decoding the stock market, hitting the gym, or diving into the world of Xbox gaming and coding, I find joy in the mix.</p>
                 <p>Join me on this journey as I share experiences from the scenic landscapes of Sweden, the ever-evolving world of stocks, and the creative realm of coding. It's more than just a story—it's life unfolding.</p> 
             </article>
@@ -78,31 +78,64 @@
         <div id="projects-container">
 
             <section class="projects">
+                <h2 class="underrubrik">CLOTHING BRAND</h2>
+            
                 <p id="project_desc">A simple webshop built with React. Built for mobile and desktop.</p> <!-- LÄGG TILL LÄNK TILL GITHUB HÄR OCKSÅ! -->
-                <article class="img__shop">
+                  
+                <div class="project__info__container">
+                <div class="project__info">
+                    <p class="project__info__text">CONCEPTUAL PROJECT</p>
+                </div>
+                   <div class="__html_css">
+                    <p class="project__info__text">HTML/CSS</p>
+                </div>
+                   <div class="__javascript">
+                    <p class="project__info__text">JAVASCRIPT</p>
+                </div>
+                   <div class="__react">
+                    <p class="project__info__text">REACT</p>
+                </div>
+            </div>
+
+                <article class="project__article">
                     <img src="/images/HeroPage.png" class="img__" alt="">
                     <img src="/images/ProductPage.png" class="img__" alt="">
                 </article>
                 <div class="btns">
-                    <a href="https://gaspar-webshop.netlify.app/" target="_blank" class="btn_">Website</a>
+                    <a href="https://gaspar-webshop.netlify.app/" target="_blank" class="btn_">Demo</a>
                     <a href="https://github.com/Gaspardious/webshop-react" class="btn_" target="_blank">
-                        <img src="/images/github-142-svgrepo-com.svg" alt="View Repository on GitHub" id="github-btn">Repo
+                        <img src="/images/github-142-svgrepo-com.svg" alt="View Repository on GitHub" id="github-btn">Code
                     </a>
                 </div>
                 
             </section>
 
             <section class="projects">
+                <h2 class="underrubrik">THE GALAXY</h2>
                 <p id="project_desc">A single-page website about our galaxy. Built with HTML, CSS, vanilla JavaScript and using API. Desktop only.</p> <!-- LÄGG TILL LÄNK TILL GITHUB HÄR OCKSÅ! -->
-                <article class="img__shop">
+                <div class="project__info__container">
+                    <div class="__school_project">
+                        <p class="project__info__text">SCHOOL PROJECT</p>
+                    </div>
+                       <div class="__html_css">
+                        <p class="project__info__text">HTML/CSS</p>
+                    </div>
+                       <div class="__javascript">
+                        <p class="project__info__text">JAVASCRIPT</p>
+                    </div>
+                       <div class="__api">
+                        <p class="project__info__text">API</p>
+                    </div>
+                </div>
+                <article class="project__article">
                     <img src="/images/Galaxy_img1.png" class="img__" alt="">
                     <img src="/images/Galaxy_img2.png" class="img__" alt="">
                 </article>
 
                 <div class="btns">
-                    <a href="https://gaspar-galaxysite.netlify.app" target="_blank" class="btn_">Website</a>
+                    <a href="https://gaspar-galaxysite.netlify.app" target="_blank" class="btn_">Demo</a>
                     <a href="https://github.com/Gaspardious/galaxy_project" class="btn_" target="_blank">
-                        <img src="/images/github-142-svgrepo-com.svg" alt="View Repository on GitHub" id="github-btn">Repo
+                        <img src="/images/github-142-svgrepo-com.svg" alt="View Repository on GitHub" id="github-btn">Code
                     </a>
                 </div>
             </section>
