@@ -108,8 +108,8 @@ body {
 }
 
 #github {
-    height: 40px;
-    width: 40px;
+    height: 55px;
+    width: 55px;
 }
 
 #herotext {
@@ -144,11 +144,10 @@ body {
 }
 
 #tech {
-    margin-top: 40px;
     font-family: "Fjalla One";
-    font-size: 15px;
+    font-size: 16px;
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 #techlist {
@@ -158,8 +157,8 @@ body {
 }
 
 #techstack {
-    width: 165px;
-    height: 65px;
+    width: 275px;
+    height: 68px;
 }
 
 
@@ -497,7 +496,6 @@ svg:hover path {
         cursor: pointer;
     }
 
-
     #nav {
         display: none;
     }
@@ -512,6 +510,21 @@ svg:hover path {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+        gap: 0;
+        margin: 10px 0px;
+        padding: 0;
+    }
+
+    #tech__divider {
+        display: none;
+    }
+
+    #tech__text {
+        display: none;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
     }
 
     .project__article {
