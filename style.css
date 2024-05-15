@@ -35,7 +35,7 @@ body {
 /*********** HEADER - SECTION ***********/
 
 #name {
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'nunito sans', sans-serif;
     color: var(--blue);
     margin: 0px 0px;
@@ -43,7 +43,7 @@ body {
     letter-spacing: 5px;
 }
 #lastname {
-    font-size: 18px;
+    font-size: 22px;
     font-family: 'nunito sans', sans-serif;
     color: var(--blue);
     margin: 0px 0px;
@@ -55,6 +55,9 @@ body {
     cursor: pointer;
     transition: transform 1s ease;
     padding: 10px 10px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
 }
 
 #logo:hover {
