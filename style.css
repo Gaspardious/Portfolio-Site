@@ -2,8 +2,8 @@
 
 :root {
     --gray: rgb(80, 80, 80);
-    --blue: rgb(255, 115, 0);
-/*     --blue: rgb(74, 118, 194); */
+    --orange: rgb(255, 115, 0);
+/*     --orange: rgb(74, 118, 194); */
     --bg-color: #f4f4f4;
 }
 
@@ -19,7 +19,7 @@ body {
     padding: 1px;
     font-weight: 100;
     font-family: 'Fjalla One', sans-serif;
-    color: var(--blue);
+    color: var(--orange);
     text-shadow: 1px 1px 2px rgb(148, 148, 148);
 }
 .underrubrik {
@@ -27,7 +27,7 @@ body {
     padding: 1px;
     font-weight: 100;
     font-family: 'Fjalla One', sans-serif;
-    color: var(--blue);
+    color: var(--orange);
     margin: 0 auto;
 }
 
@@ -37,7 +37,7 @@ body {
 #name {
     font-size: 16px;
     font-family: 'nunito sans', sans-serif;
-    color: var(--blue);
+    color: var(--orange);
     margin: 0px 0px;
     font-weight: 100;
     letter-spacing: 5px;
@@ -45,7 +45,7 @@ body {
 #lastname {
     font-size: 18px;
     font-family: 'nunito sans', sans-serif;
-    color: var(--blue);
+    color: var(--orange);
     margin: 0px 0px;
     font-weight: 800;
 }
@@ -61,14 +61,14 @@ body {
 }
 
 #logo:hover {
-    color: var(--blue) !important;
+    color: var(--orange) !important;
     transform: scale(1.05);
 }
 
 #job_title {
     font-size: 70px;
     font-family: 'Fjalla One', sans-serif;
-    color: var(--blue);
+    color: var(--orange);
     margin: 0px 0px;
     font-weight: 100;
     text-shadow: 1px 1px 2px rgb(148, 148, 148);
@@ -94,9 +94,7 @@ body {
     list-style-type: none;
 }
 
-.menu_link {
-    color: var(--gray);
-}
+
 
 
 /*********** HERO - SECTION ***********/
@@ -122,7 +120,7 @@ body {
 #hero-img {
     width: 350px;
     height: 350px;
-    border: 5px solid var(--blue);
+    border: 5px solid var(--orange);
     border-radius: 50%; 
     margin: 0px 0px 0px 20px;  
     box-shadow: 12px 12px 15px 10px rgba(0, 0, 0, 0.2);    
@@ -202,7 +200,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--bg-color);
-    padding: 50px 50px 0px 50px;
+    padding: 50px 30px 0px 30px;
     box-shadow: 0 0 10px rgba(0,0,0,.09);
 }
 
@@ -210,14 +208,12 @@ body {
     background: #fff;
     min-height: 30vw;
     width: 100%;
-    padding: 25px 5px;
+    padding: 30px 0px;
     margin: 50px 0px;
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-
 }
-
 
 .project__info__container {
     display: flex;
@@ -234,7 +230,7 @@ body {
 .__school_project {
     width: 120px;
     height: 20px;
-    background-color: var(--blue);
+    background-color: var(--orange);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -275,7 +271,10 @@ body {
     border-radius: 20px;
     min-height: 150px;
     padding: 20px;
+    background: var(--bg-color);
 }
+
+
 
 #project_desc {
     padding: 20px 20px;
@@ -301,6 +300,12 @@ body {
     justify-content: space-evenly;
 }
 
+.btn_:hover {
+    background-color: var(--orange);
+    color: white;
+    cursor: pointer;
+}
+
 .btns {
     display: flex;
     text-align: center;
@@ -322,8 +327,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 30px;
-    padding: 25px 0px;
+    border-radius: 15px;
+    padding: 30px 0px;
+    margin: 20px 0px;
 }
 
 .social {
@@ -342,27 +348,8 @@ a:-webkit-any-link {
 }
 
 a:hover {
-    color: var(--blue);
-}
-
-#website-preview {
-    width: 70vw;
-    height: 20vw;
-    overflow: none;
-}
-
-#iframe-preview {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-article {
-    border-radius: 15px;
-    padding: 1px 8px;
-    background: var(--bg-color);
-}
-    
+    color: var(--orange);
+}    
 
 
 
@@ -384,7 +371,7 @@ svg {
 }
 
 svg:hover path {
-    fill: var(--blue);
+    fill: var(--orange);
 }
 
 #mobile_menu {
@@ -433,9 +420,9 @@ svg:hover path {
     text-decoration: none;
     font-family: 'Fjalla One', sans-serif;
     font-size: 36px;
-    color: var(--blue);
+    color: var(--orange);
     display: block;
-    transition: 0.2s;
+    transition: 0.5s;
   }
   
   .overlay a:hover, .overlay a:focus {
@@ -481,13 +468,13 @@ svg:hover path {
     #job_title {
         font-size: 45px;
         font-family: 'Fjalla One', sans-serif;
-        color: var(--blue);
+        color: var(--orange);
     }
 
     #hero-img {
         width: 320px;
         height: 320px;
-        border: 3px solid var(--blue);
+        border: 3px solid var(--orange);
         border-radius: 50%;
         margin: 60px 20px 40px 20px;
     }
@@ -535,7 +522,7 @@ svg:hover path {
         display: grid;
         grid-template-columns: 1fr;
         gap: 1rem; 
-        margin: 25px 5px;
+        margin: 20px;
         padding: 10px;
     }
 
@@ -551,6 +538,10 @@ svg:hover path {
     .projects {
         width: 90vw;
     }
+
+  
+
+
 }
 
 

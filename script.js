@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
       section && section.scrollIntoView({ behavior: 'smooth' });
   };
 
-  // Event listener for the menu links and logo
+
   const menuLinks = document.querySelectorAll('.menu-link');
   const logo = document.getElementById('logo');
 
@@ -16,12 +16,12 @@ document.addEventListener('DOMContentLoaded', function () {
       });
   });
 
-  // Logo click event
+
   logo && logo.addEventListener('click', () => {
       scrollToSection('home');
   });
 
-  // Event listener for the menu button
+
   const menuButton = document.getElementById('menu');
   menuButton && menuButton.addEventListener('click', () => {
       const nav = document.getElementById('nav');
@@ -33,11 +33,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
+
 function openNav() {
     document.getElementById("myNav").style.width = "60%";
-    document.getElementById("backgroundOverlay").style.display = "block";
-    backgroundOverlay.style.opacity = "1"; 
-}
+    var backgroundOverlay = document.getElementById("backgroundOverlay");
+    backgroundOverlay.style.display = 'block';  
+    setTimeout(function() {  
+        backgroundOverlay.style.opacity = '1';
+    }, 20);  
+    }
 
 function closeNav() {
     document.getElementById("myNav").style.width = "0";
@@ -49,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var overlay = document.getElementById('myNav');
     var overlayContent = document.querySelector('.overlay-content');
     var backgroundOverlay = document.getElementById('backgroundOverlay');
-    var navLinks = document.querySelectorAll('.overlay-content a'); // Select all nav links
+    var navLinks = document.querySelectorAll('.overlay-content a'); 
 
 
     navLinks.forEach(function(link) {
@@ -73,18 +78,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-   // This ensures that the background overlay disappears from the layout when it's fully transparent
+  
    backgroundOverlay.addEventListener('transitionend', function(event) {
     if (event.propertyName === 'opacity' && backgroundOverlay.style.opacity === '0') {
         backgroundOverlay.style.display = 'none';
     }
 });
-
-function openNav() {
-document.getElementById("myNav").style.width = "60%";
-var backgroundOverlay = document.getElementById("backgroundOverlay");
-backgroundOverlay.style.display = 'block';  // Make sure the element is display block before changing opacity
-setTimeout(function() {  // Ensure the display change has taken effect
-    backgroundOverlay.style.opacity = '1';
-}, 10);  // Small timeout to ensure the display property has taken effect
-}
