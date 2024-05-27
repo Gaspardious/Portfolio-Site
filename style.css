@@ -197,7 +197,7 @@ body {
 }
 
 
-.video {
+/* .video {
     position: absolute;
     top: 0;
     left: 0;
@@ -215,7 +215,7 @@ body {
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
     z-index: -1;
-}
+} */
 
 
 
