@@ -87,6 +87,7 @@ body {
     height: 50px;
     box-shadow: 0 0 10px rgba(0,0,0,.09);
     position: fixed;
+    z-index: 1;
 }
 
 #nav {
@@ -214,6 +215,7 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 15px;
+    position: relative  ;
 }
 
 .project__info__container {
@@ -246,10 +248,25 @@ body {
     }
 }
 
+.desktop {
+    width: 65px;
+    height: 16px;
+    background-color: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 6px;
+    top: 10px;
+    left: 10px;
+    margin: 0 auto;
+    color: white;
+    font-size: 7px;
+}
+
 .__html_css {
     width: 60px;
 }
-
 .__javascript {
     width: 70px;
 }
@@ -260,7 +277,7 @@ body {
     width: 30px;
 }
 .__school_project {
-    width: 100px;
+    width: 92px;
 }
 
 
