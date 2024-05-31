@@ -401,6 +401,10 @@ svg:hover path {
 
 /********** MOBILE NAVIGATION **********/
 
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
 
 .overlay {
     height: 100%;
@@ -452,8 +456,8 @@ svg:hover path {
   
   .overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
+    top: 40px;
+    right: 20px;
     font-size: 60px;
   }
 
