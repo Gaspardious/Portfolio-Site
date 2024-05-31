@@ -21,7 +21,6 @@ body {
     font-family: 'Fjalla One', sans-serif;
     color: var(--orange);
     text-shadow: 1px 1px 2px rgb(148, 148, 148);
-    z-index: 1;
 }
 .underrubrik {
     font-size: 25px;
