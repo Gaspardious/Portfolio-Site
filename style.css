@@ -179,9 +179,9 @@ body {
 }
 
 .about__text {
-    max-width: 500px;
+    max-width: 600px;
     background-color: #fafafa;
-    padding: 25px;
+    padding: 30px;
     margin: 10px;
     border-radius: 30px;
     border-bottom: solid #F1F1F1;
@@ -566,10 +566,8 @@ li {
 
     .about__text {
         font-size: 14px;
-        text-decoration: dotted;
-
     }
-
+    
 
 
 }
