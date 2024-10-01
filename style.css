@@ -31,6 +31,15 @@ body {
     margin: 0 auto;
 }
 
+.passionproject {
+    font-size: 15px;
+    padding: 1px;
+    font-weight: 100;
+    font-family: 'Fjalla One', sans-serif;
+    color: var(--gray);
+    margin: 0 auto;
+}
+
 
 /*********** HEADER - SECTION ***********/
 
@@ -222,15 +231,20 @@ body {
 .project__info__container {
     display: flex;
     align-items: center;
+    justify-content: center; 
     margin: 0 auto;
-    gap: 0.25rem;
+    gap: 0.5rem;
+    padding: 0px 8px;
+    flex-wrap: wrap;
 }
+
 
 .project__info, 
 .__html_css, 
 .__javascript,
 .__react,
 .__api,
+.__aws,
 .__school_project {
     width: 120px;
     height: 20px;
@@ -241,7 +255,6 @@ body {
     border-radius: 6px;
     top: 10px;
     left: 10px;
-    margin: 0 auto;
 
     .project__info__text {
         color: white;
@@ -277,6 +290,10 @@ body {
 .__api {
     width: 30px;
 }
+.__aws {
+    width: 40px;
+}
+
 .__school_project {
     width: 92px;
 }
@@ -469,6 +486,7 @@ li {
     right: 35px;
     }
   }
+  
 
 
 @media only screen and (max-width: 800px) {
