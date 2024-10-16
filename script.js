@@ -40,7 +40,7 @@ function openNav() {
     var backgroundOverlay = document.getElementById("backgroundOverlay");
     backgroundOverlay.style.display = 'block';  
     setTimeout(function() {  
-        backgroundOverlay.style.opacity = '1';
+        backgroundOverlay.style.opacity = '1';        
     }, 20);  
     }
 

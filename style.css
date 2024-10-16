@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&display=swap');
 
 :root {
-    --gray: rgb(80, 80, 80);
-    --orange: rgb(255, 111, 0);
+    --gray: rgb(0, 0, 0);
+    --orange: rgb(240, 105, 3);
     --bg-color: #f1f1f1;
     --main-color: #fcfcfc;
     --text-color-light: #f1f1f1;
@@ -22,7 +22,7 @@ body {
     font-weight: 100;
     font-family: 'Fjalla One', sans-serif;
     color: var(--orange);
-    text-shadow: 1px 1px 2px rgb(148, 148, 148);
+    text-shadow: 1px 1px 2px rgb(74, 74, 74);
 }
 .underrubrik {
     font-size: 25px;
@@ -106,6 +106,7 @@ body {
     gap: 2rem;
     list-style-type: none;
 }
+
 
 
 
